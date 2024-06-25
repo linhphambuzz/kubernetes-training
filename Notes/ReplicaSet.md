@@ -120,7 +120,7 @@ or `kubectl get rs`
 
 ## Commands 
 
-![[20240620184500.png]]
+![](../img/20240620184500.png)
 
 
 ## References 

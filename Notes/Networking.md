@@ -33,7 +33,7 @@ together with other applications or users.
 
 ## Service file definition 
 
-![[Pasted image 20240622105553.png]]
+![](../img/Pasted_image_20240622105553.png)
 
 To link the service to the pod, bring the `labels` section of `pod-definition.yaml` to `selector`
 

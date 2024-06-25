@@ -10,7 +10,7 @@
 - A single pod can have multiple containers (typically not the same kind)
 - An example is "helper container" 
 - The 2 containers can also connect to each other by local host since they share the same network space 
-- ![[20240619193230.png]]
+![](../img/20240619193230.png)
 
 ### kubectl
 1. To deploy an application 

@@ -22,7 +22,7 @@
 
 2. deployment strategy 
 - destroy instances --> create new one  by one 
-![[Pasted image 20240621093526.png]]
+![](../img/Pasted_image_20240621093526.png)
 
 -> default strategy 
 
@@ -32,7 +32,7 @@ or
 --> doing this way might result in deployment yaml file and actual deployment with different configurations. \
 
 - Difference between recreated update (delete to recreate ) and rolling update 
-![[Pasted image 20240621094708.png]]
+![](../img/Pasted_image_20240621094708.png)
 
 
 2. Upgrades /rollback
@@ -44,7 +44,7 @@ or
 ## Summary 
 
 
-![[Pasted image 20240621095357.png]]
+![](../img/Pasted_image_20240621095357.png)
 
 
 --record: to record the history of rollout 

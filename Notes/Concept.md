@@ -3,7 +3,8 @@
 - Docker container share the underlying kernel: Dokcer can run any OS flavor on top of it, as long as they're in same kernel 
 - Docker utilizes the underlying kernel of Docker host 
 - Docker can't run another kernel on the OS (can't run window on  a Linux machine)
-- ![[20240619150509.png]]![[20240619150534.png]]
+![](../img/20240619150509.png)
+![](../img/20240619150534.png)
 
 
 ### Images vs. Container
@@ -82,4 +83,4 @@ cluster.
 - `nerdctl` provides Docker-like CLI for containerD
 - `crictk` provides a CLI for CRI compatible container runtimes
 
-![[20240619190823.png]]
+![](../img/20240619190823.png)
