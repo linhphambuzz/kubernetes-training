@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: frontend
+
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: myapp
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: myapp
+    spec:
+      containers:
+      - image: kodekloud/webapp-color:v2
+        name: frontend
+                     
