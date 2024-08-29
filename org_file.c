@@ -24,14 +24,14 @@ int main(void) {
         printf("file found : %s\n ",file);
         old_name=file; 
 
-        char* token = strtok (file," _");
+        char* token = strtok (file," _/");
         while (token != NULL){
             if (strstr(token,".png")!=NULL){
                 new_name=token;
                 printf("new name: %s\n",new_name);
                 break;
             }
-            token = strtok (NULL, " ");
+            token = strtok (NULL, " _/");
             
         }
         int re=rename(old_name,new_name);
