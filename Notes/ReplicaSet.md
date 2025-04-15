@@ -93,7 +93,7 @@ To get the replica:
 `kubectl get replicaset` 
 or `kubectl get rs`
 
-![[Pasted image 20240621082046.png]]
+![](../img/Pasted_image_20240621082046.png)
 - In the event that `replica` is specified to 3, trying to create another pod which falls under the template section of the replica definition will get that pod terminated right away. 
 
 
@@ -127,3 +127,4 @@ or `kubectl get rs`
 
 https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/#replicaset-as-an-
 horizontal-pod-autoscaler-target
+
