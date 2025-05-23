@@ -1,6 +1,6 @@
 
 ## Switching 
-![](../../img/Pasted%20image%2020250516165724.png)
+![](../../../img/Pasted%20image%2020250516165724.png)
 - Each host has `eth0` as interface to connect to the switch 
 - `ip link` : to see interfaces on the host. 
 - `ip addr add` is used to add the ip adresses range of the switch to the host, used to add an IP address to a network interface (i.e: `eth0`)
@@ -12,7 +12,7 @@
 - Help connected 2 networks together: it assigns 2 separate ip addresses(i.e.: 192.168.1.1 and 192.168.2.1) for each network that it help connecting together. 
 
 ## Gateway 
-![](../../img/Pasted%20image%2020250517110200.png)
+![](../../../img/Pasted%20image%2020250517110200.png)
 - How does `B` know about `C` to send a packet to it? 
 - Gateway: door to the world to the network
 - To see the existing routing algorithm on a host: `route` cmd --> display kernel's routing table
@@ -25,9 +25,9 @@
 - `0.0.0.0` is equivalent to `default`
 - If the gateway is set to `0.0.0.0`: the host communicates with components within each own network
 
-![](../../img/Pasted%20image%2020250518111814.png)
+![](../../../img/Pasted%20image%2020250518111814.png)
 - Multiple routers can be used: one for internal network, one for going out to the internet : 192.168.2.1 is for the internet, 192.168.2.2 is for internal
-![](../../img/Pasted%20image%2020250518112209.png)
+![](../../../img/Pasted%20image%2020250518112209.png)
 
 ## Linux host as a router
 

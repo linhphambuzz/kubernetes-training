@@ -1,23 +1,23 @@
 
 ## Process Namespace 
 - Each docker container can only see resources within the process namespace
-![](../../img/Pasted%20image%2020250521130006.png)
+![](../../../img/Pasted%20image%2020250521130006.png)
 
 ## Network Namespace 
 - Host has its own interface to connect to LAN, along with ARP and Routing Table 
 - Within the container, the samething above applied
-![](../../img/Pasted%20image%2020250521130254.png)
+![](../../../img/Pasted%20image%2020250521130254.png)
 
 #### Create network namespace 
 - `ip netns add <name-net-space>`: to add
 - `ip netns`: to list 
 #### Exec in network namespace 
-![](../../img/Pasted%20image%2020250521130829.png)
+![](../../../img/Pasted%20image%2020250521130829.png)
 - On host: lo and eth0 is listed, but inside `red` network namespace, only lo is listed. This is because it's in an isolated environment. 
 - The same thing is applied to `arp` (i.e address resolution protocol) command.
 
 #### Connect two interfaces 
-![](../../img/Pasted%20image%2020250521133306.png)
+![](../../../img/Pasted%20image%2020250521133306.png)
 
 1. Make the connection
 	- The **veth** devices are virtual Ethernet devices
@@ -109,7 +109,7 @@ ip netns exec blue ip route add 192.168.1.0/24 via 192.168.15.5
 >[!Reminder] `192.168.15.5` is the ip address assigned to `v-net-0` interface
 
 
-![](../../img/Pasted%20image%2020250521220435.png)
+![](../../../img/Pasted%20image%2020250521220435.png)
 
 #### Connect to the internet
 
@@ -129,4 +129,4 @@ ip route add default via 192.168.15.5
 iptables -t nat -A PREROUTING --dport 80 --to-destination 192.168.15.2:80 -j DNAT
 ```
 
-![](../../img/Pasted%20image%2020250521221803.png)
+![](../../../img/Pasted%20image%2020250521221803.png)
