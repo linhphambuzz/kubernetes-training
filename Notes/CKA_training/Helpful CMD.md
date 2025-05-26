@@ -10,3 +10,4 @@
 - `ip route add 192.168.1.9/24 via 192.168.2.1` : add to routing table  
 - `cat /proc/sys/net/ipv4/ip_forward`: is packet forwarding enable on the host? 
 - `ps aux`: list processes
+- `netns`: cmd for network namespace 
