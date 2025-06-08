@@ -16,7 +16,7 @@ guarantee trust between client-server
 #### Using openssl 
 
 ```bash
-openssl genrsa -out my-banj.key 1024
+openssl genrsa -out my-bank.key 1024
 openssl rsa -in my-bank.key -pubout > mybank.pem
 ```
 

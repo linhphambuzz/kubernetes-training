@@ -10,4 +10,8 @@
 - `ip route add 192.168.1.9/24 via 192.168.2.1` : add to routing table  
 - `cat /proc/sys/net/ipv4/ip_forward`: is packet forwarding enable on the host? 
 - `ps aux`: list processes
-- `netns`: cmd for network namespace 
+- `netstat`: cmd for network namespace 
+- `openssl genrsa -out ca.key 2048` : generate key 
+- `openssl req -new -key ca.key -subj "CN=KUBERNETES-CA" -out ca.csr `:  CSR 
+- `openssl x509 -req -in ca.csr -signkey ca.key -out ca.crt`: sign CERT
+- `cat user.csr | base64 | tr -d '\n'`
