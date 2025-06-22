@@ -1,5 +1,5 @@
 # Kubernetes Trainings 
-
+[https://linhphambuzz.github.io/kubernetes-training/](https://linhphambuzz.github.io/kubernetes-training/) 
 ## Kubernetes Intro 
 1. [Concept](./Notes/Concept.md)
 2. [Pod](./Notes/Pod.md) 
