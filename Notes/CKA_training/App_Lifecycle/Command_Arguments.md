@@ -1,0 +1,2 @@
+- Use `.spec.command` for pod definition : entrypoint
+- User `.spec.args` for pod definition: command
