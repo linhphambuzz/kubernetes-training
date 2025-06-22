@@ -35,3 +35,7 @@
 - `/etc/cni/net.d/net-script.conflist` : identify plugin 
 - `/opt/cni/bin/net-script.sh`: to find the script 
 - `./net-script.sh add <cntainer> <namespace>` : script executed, adding container to the network namespace
+
+>[!Tip]
+>- `--service-cluster-ip-range=172.20.0.0/16` flag configured in the **kube-controller-manager** and **kube-api** is service's ip range
+>- `--cluster-cidr` in `kubectl cluster-info dump` is pod's ip range

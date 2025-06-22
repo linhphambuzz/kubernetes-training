@@ -37,3 +37,9 @@
 1. [KUBECONFIG](./Notes/CKA_training/Security/KUBECONFIG.md)
 1. [RBAC](./Notes/CKA_training/Security/RBAC.md)
 1. [TLS](./Notes/CKA_training/Security/TLS_Kubernetes.md)
+
+### Application Lifecycle 
+1. [Multi-container applications](./Notes/CKA_training/App_Lifecycle/Multicontainer-pod.md)
+1. [Rolling Updates](./Notes/CKA_training/App_Lifecycle/Rolling_Updates.md)
+1. [Command Argument](./Notes/CKA_training/App_Lifecycle/Command_Arguments.md)
+1. [HPA/VPA Autoscaling](./Notes/CKA_training/App_Lifecycle/Autoscaling.md)
