@@ -38,3 +38,7 @@
 
 - weave by default gives: `10.32.0.0/12`: `10.32.0.1` > `10.477.255.254`
 - IP ranges will be splitted up evenly to nodes
+
+## References
+- [The Kubernetes Networking Guide](https://www.tkng.io/)
+- [Slides from KubeCon 2018 about CNi](https://www.caseyc.net/cni-talk-kubecon-18.pdf)
