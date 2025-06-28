@@ -73,16 +73,18 @@ kubectl edit deployment my-app
 2. VPA Updater:
 	- Detects pods running with sub-optimal resources and evicts them if an update is needed
 	- The Updater needs information from the Recommender
-- VPA Admission Controller: 
+3. VPA Admission Controller: 
 	- Interverne the pod creation process and uses the recommendations from the Recommender to apply the recommned resources
 
 #### Declarative way 
 ![](../../../img/Pasted%20image%2020250622215316.png)
-1. About `updatePolicy`: 
+-  About `updatePolicy`: 
 	- Off: only **Recommender** working
 	- Initial: only applied if there's new pod created
 	- Recreate: **Updater** would jump in and evict pods
 	- Auto: similar to recreate for now, until in-place resize of pod is available
+>[!important] 
+> in troubleshooting VPA, always look at the logs for the updater, admission controller and recommender in the kube-system namespace. In the case that the deployment only has 1 replica and the `updatePolicy` is `Recreate`, Kubernetes has a mechanism to prevent that only pod from being killed. Therefore, we would need to scale of the replicas of pod before the VPA can proceed
 ## Scaling Cluster Infra 
 - Horizontal: adding more nodes to the cluster
 - Vertical scaling: adding resources to the existing nodes in the cluster
