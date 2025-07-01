@@ -53,3 +53,4 @@ etcdctl snapshot status /backup/etcd-snapshot.db --write-out=table
 ## References
 
 - [K8S Docs](https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/#backing-up-an-etcd-cluster)
+- [Restoring ETCD](https://github.com/mmumshad/kubernetes-cka-practice-test-solution-etcd-backup-and-restore)

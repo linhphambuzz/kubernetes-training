@@ -43,3 +43,8 @@
 1. [Rolling Updates](./Notes/CKA_training/App_Lifecycle/Rolling_Updates.md)
 1. [Command Argument](./Notes/CKA_training/App_Lifecycle/Command_Arguments.md)
 1. [HPA/VPA Autoscaling](./Notes/CKA_training/App_Lifecycle/Autoscaling.md)
+
+### Cluster Upgrade
+1. [ETCD backup](./Notes/CKA_training/Cluster_Upgrade/ETCD_BackUP.md)
+1. [Kubernetes components upgrade](./Notes/CKA_training/Cluster_Upgrade/K8S_components_upgrade.md)
+1. [Node Drain](./Notes/CKA_training/Cluster_Upgrade/Node_Drain.md)
