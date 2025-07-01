@@ -48,3 +48,7 @@
 1. [ETCD backup](./Notes/CKA_training/Cluster_Upgrade/ETCD_BackUP.md)
 1. [Kubernetes components upgrade](./Notes/CKA_training/Cluster_Upgrade/K8S_components_upgrade.md)
 1. [Node Drain](./Notes/CKA_training/Cluster_Upgrade/Node_Drain.md)
+
+## Misc
+1. [Helm](./Notes/CKA_training/Helm.md)
+1. [Kustomize](./Notes/CKA_training/Kustomize.md)
